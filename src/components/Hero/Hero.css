@@ -1,0 +1,54 @@
+.hero{
+    position: relative;
+    overflow: hidden;
+}
+.hero .over{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0006;
+    z-index: 1;
+}
+.hero .box{
+    position: relative;
+}
+.hero .box .box-img{
+    height: 85vh;
+}
+.hero .box .box-img img{
+    width: 100%;
+    height: 100%;
+}
+.hero .box .box-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    padding: 10px 50px;
+    width: 100%;
+}
+.hero .box .box-content h4{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.hero .box .box-content h2{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+
+
+/*--------------heroSlider---------------*/
+.hero .slick-arrow{
+    display: none;
+}
+
+.hero ul.slick-dots{
+    bottom: 0 !important;
+}

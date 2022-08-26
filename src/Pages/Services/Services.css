@@ -1,0 +1,41 @@
+.services{
+    padding: var(--main-padding);
+}
+.services .ser-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+.services .ser-content .box{
+    text-align: center;
+    box-shadow: 6px 14px 14px #ddd;
+    padding: 40px 10px;
+    border-radius: 20px;
+    transition: .3s;
+}
+.services .ser-content .box .icon{
+    color: var(--main-color-alt);
+    display: inline-block;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+.services .box:hover{
+    transform: translateY(15px);
+}
+.services .box h3{
+    color: var(--main-color-alt);
+    font-size: 24px;
+    font-weight: 500;
+    transition: .3s;
+}
+.services .box:hover .icon,
+.services .box:hover h3{
+    color: var(--main-color);
+}
+.services .box p{
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px;
+}

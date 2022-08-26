@@ -1,0 +1,84 @@
+.Header{
+    background-color: var(--main-backGround);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 44;
+}
+.Header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Header .navbar .logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+}
+.Header .navbar .logo span{
+    color: var(--main-color);
+}
+.Header .navbar .nav{
+display: flex;
+}
+
+.Header .navbar .nav li a{
+    height: 70px;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: .3s;
+}
+.Header .navbar .nav li a:hover{
+    color: var(--main-color);
+}
+
+.Header .toggle{
+    cursor: pointer;
+    color: var();
+    display: none;
+}
+@media (max-width:768px) {
+    .Header .nav{
+        display: none !important;
+    }
+    .Header .toggle{
+        display: flex;
+        font-size: 25px;
+        background-color: var(--main-color);
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+    }
+    .Header .nav-mobile{
+        background-color: var(--main-backGround);
+        position: fixed;
+        top: 8vh;
+        left: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .Header .nav-mobile li{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: .5s;
+    }
+    .Header .nav-mobile li:hover{
+        background-color: #ddd;
+        color: var(--main-color);
+    }
+    .Header .nav-mobile a{
+        color: #fff;
+    }
+}
